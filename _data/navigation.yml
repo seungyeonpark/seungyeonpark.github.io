@@ -1,0 +1,22 @@
+# main links
+main:
+  - title: "Home"
+    url: https://seungyeonpark.github.io/
+
+  - title: "About"
+    url: /about/
+
+  - title: "GitHub"
+    url: https://github.com/seungyeonpark
+
+  # - title: "Projects"
+  #   url: /projects/
+
+  # - title: "Categories"
+  #   url: /categories/
+
+# sidebar navigation (categories)
+# 2022.02.15 sidebar update : simple ver.
+categories:
+  - title: "Security"
+    url: /categories/security/

@@ -1,7 +1,6 @@
-source 'https://rubygems.org'
-gem 'jekyll', '<4'
-gem 'jekyll-archives'
+source "https://rubygems.org"
+gemspec
+
+gem 'jekyll-admin', group: :jekyll_plugins
 gem 'jekyll-sitemap'
-gem 'jekyll-paginate-v2'
-gem 'kramdown-parser-gfm'
-gem "webrick", "~> 1.8"
+gem 'rack', '~> 2.2'
