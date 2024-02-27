@@ -20,3 +20,5 @@ main:
 categories:
   - title: "Security"
     url: /categories/security/
+  - title: "Elasticsearch"
+    url: /categories/elasticsearch/
