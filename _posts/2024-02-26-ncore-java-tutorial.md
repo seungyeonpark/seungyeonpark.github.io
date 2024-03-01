@@ -13,28 +13,27 @@ toc: true
 toc_sticky: true
 
 date: 2024-02-26
-last_modified_at: 2024-02-26
+last_modified_at: 2024-03-01
 ---
 
 ## 1. Overview
-
-1-1. Connection
+### 1-1. Connection
 
    ![ncore-java-tutorial-connection](../assets/images/posts-img/ncore-java-tutorial-connection.jpg)
-  - 어플리케이션은 먼저 모듈에서 실행되고 있는 하드서버에 연결을 생성해야 한다
+- 어플리케이션은 먼저 모듈에서 실행되고 있는 하드서버에 연결을 생성해야 한다
 
 <br>
 
-1-2. Transaction
+### 1-2. Transaction
 
    ![ncore-java-tutorial-transaction](../assets/images/posts-img/ncore-java-tutorial-transaction.jpg)
-  - 하드서버 연결 후 어플리케이션은 모듈에 M_Command 전송
-  - 모듈은 M_Reply 응답
-    - M_Reply는 status 및 명령의 결과를 포함
+- 하드서버 연결 후 어플리케이션은 모듈에 M_Command 전송
+- 모듈은 M_Reply 응답
+  - M_Reply는 status 및 명령의 결과를 포함
 
 <br>
 
-1-3. Creating a softcard
+### 1-3. Creating a softcard
 
   ```bash
   ppmk --new --non-recoverable WorkedExampleSoftcard
@@ -42,7 +41,7 @@ last_modified_at: 2024-02-26
 
 <br>
 
-1-4. Variables used in this tutorial
+### 1-4. Variables used in this tutorial
 
   | Variable type | Variable name | Variable description |
   | --- | --- | --- |
@@ -64,60 +63,57 @@ last_modified_at: 2024-02-26
 <br>
 
 ## 2. Before connecting to the hardserver
+### 2-1. Before connecting to the hard server
+- WorldCallBacks, SecurityWorld 객체 인스턴스화
 
-2-1. Before connecting to the hard server
-  - WorldCallBacks, SecurityWorld 객체 인스턴스화
-
-      ```java
-      WorldCallbacks wcb = new WorldCallbacks();
-      SecurityWorld world = new SecurityWorld(null, wcb, null, true);
-      ```
+    ```java
+    WorldCallbacks wcb = new WorldCallbacks();
+    SecurityWorld world = new SecurityWorld(null, wcb, null, true);
+    ```
 
 <br>
 
-2-2. WorldCallbacks
-  - 하드서버가 사용자로부터 키를 생성하거나 사용 권한을 얻을 때 상호작용하는 방법을 정의
-  - DefaultCallBack 클래스를 extends
+### 2-2. WorldCallbacks
+- 하드서버가 사용자로부터 키를 생성하거나 사용 권한을 얻을 때 상호작용하는 방법을 정의
+- DefaultCallBack 클래스를 extends
 
-      ```java
-      class WorldCallbacks extends DefaultCallBack {
+    ```java
+    class WorldCallbacks extends DefaultCallBack {
       
-          public SoftCard configured_softcard = null;
+        public SoftCard configured_softcard = null;
       
-          public String reqPPCallBack(String ReqPPAction) throws NFException {
-            try {
-              return Passphrase.readPassphrase("Enter softcard passphrase: ");
-            } catch(IOException e) {
-              throw new NFException(e.toString());
-            }
+        public String reqPPCallBack(String ReqPPAction) throws NFException {
+          try {
+            return Passphrase.readPassphrase("Enter softcard passphrase: ");
+          } catch(IOException e) {
+            throw new NFException(e.toString());
           }
+        }
           
-          // Callback to choose a softcard
-          public SoftCard getSoftCardCallback() throws NFException {
-            return configured_softcard;
-          }
-      }
-      ```
+        // Callback to choose a softcard
+        public SoftCard getSoftCardCallback() throws NFException {
+          return configured_softcard;
+        }
+    }
+    ```
 
 <br>
 <br>
 
 ## 3. Connecting to the hardserver
-
 - Connecting to the hardserver
-  - 하드서버에 연결을 생성
-  - NFConnection 객체를 wrapping하는 EasyConnection 객체 인스턴스화
+- 하드서버에 연결을 생성
+- NFConnection 객체를 wrapping하는 EasyConnection 객체 인스턴스화
 
-      ```java
-      EasyConnection c = new EasyConnection(world.getConnection());
-      ```
+    ```java
+    EasyConnection c = new EasyConnection(world.getConnection());
+    ```
 
 <br>
 <br>
 
 ## 4. Generating a key
-
-4-1. getKey()
+### 4-1. getKey()
 
   ```java
   Key k = world.getKey(appname, ident);
@@ -128,70 +124,74 @@ last_modified_at: 2024-02-26
 
 <br>
 
-4-2. generate_key()
+### 4-2. generate_key()
 
-4-2-1. 키 생성 프로세스
+(1) 키 생성 프로세스
 
    ![ncore-java-tutorial-generate-key](../assets/images/posts-img/ncore-java-tutorial-generate-key.jpg)
 
-4-2-2. generate_key() 메서드 구현  
+<br>
 
-a. SecurityWorld로부터 AppKeyGenerator 객체 획득  
+(2) generate_key() 메서드 구현  
+
+a. SecurityWorld로부터 AppKeyGenerator 객체 획득
 b. AppKeyGenerator 객체에서 key properties 지원 여부 확인  
 
-- property가 존재하지 않는 경우,
-
-    ```java
-    String[] properties = new String[] {
-      "ident",
-      "type",
-      "size",
-      "protect"
-    }
-    
-    for (int i = 0; i < properties.length; i++) {
-      if (akg.getProperty(properties[i]) == null) {
-        System.out.println("Property " + properties[i] + " does not exist." +
-          "Does your security world contain a usable softcard?");
-        System.exit(0);
+  - property가 존재하지 않는 경우,
+  
+      ```java
+      String[] properties = new String[] {
+        "ident",
+        "type",
+        "size",
+        "protect"
       }
-    }
-    ```
+      
+      for (int i = 0; i < properties.length; i++) {
+        if (akg.getProperty(properties[i]) == null) {
+          System.out.println("Property " + properties[i] + " does not exist." +
+            "Does your security world contain a usable softcard?");
+          System.exit(0);
+        }
+      }
+      ```
 
-- 모든 properties 존재하는 경우,
+    - 모든 properties 존재하는 경우,
 
-    ```java
-    // setStringProperty() 및 setMenuProperty() 함수를 사용하여 
-    // AppKeyGenProperty[]를 채움
-    setStringProperty(akg, "ident", ident);
-    setMenuProperty(akg, "type", type);
-    setStringProperty(akg, "size", Integer.toString(len));
+        ```java
+        // setStringProperty() 및 setMenuProperty() 함수를 사용하여 
+        // AppKeyGenProperty[]를 채움
+        setStringProperty(akg, "ident", ident);
+        setMenuProperty(akg, "type", type);
+        setStringProperty(akg, "size", Integer.toString(len));
         
-    // 키 보호 방법에 따라 protect 속성 결정
-    switch(protection) {
-        case NFKM_Key_flags.f_ProtectionModule:
-          setMenuProperty(akg, "protect", "module");
-          break;
-        
-        case NFKM_Key_flags.f_ProtectionPassPhrase:
-        
-          setMenuProperty(akg, "protect", "softcard");
-          SoftCard cards[] = world.getSoftCards();
-          wcb.configured_softcard = null;
-        
-          for(int n = 0; n < cards.length; ++n) {
-            if(cards[n].getName().equals(prot_name)) {
-              wcb.configured_softcard = cards[n];
-            }
-            if(wcb.configured_softcard == null) {
-              throw new NoSuchSoftCard(prot_name);
+        // 키 보호 방법에 따라 protect 속성 결정
+        switch(protection) {
+            case NFKM_Key_flags.f_ProtectionModule:
+              setMenuProperty(akg, "protect", "module");
               break;
-            }
-          }
-    }
-    ```
+        
+            case NFKM_Key_flags.f_ProtectionPassPhrase:
+        
+              setMenuProperty(akg, "protect", "softcard");
+              SoftCard cards[] = world.getSoftCards();
+              wcb.configured_softcard = null;
+        
+              for(int n = 0; n < cards.length; ++n) {
+                if(cards[n].getName().equals(prot_name)) {
+                  wcb.configured_softcard = cards[n];
+                }
+                if(wcb.configured_softcard == null) {
+                  throw new NoSuchSoftCard(prot_name);
+                  break;
+                }
+              }
+        }
+        ```
 
-4-2-3. AppKeyGenerator 객체에 할당된 속성 값이 유효하다면 generate() 호출
+<br>
+
+(3) AppKeyGenerator 객체에 할당된 속성 값이 유효하다면 generate() 호출
 
   ```java
   InvalidPropValue badprops[] = akg.check(); // 속성 유효성 체크
@@ -203,7 +203,9 @@ b. AppKeyGenerator 객체에서 key properties 지원 여부 확인
   return akg.generate(getUsableModule(world), null); // 새로 생성된 키에 대한 참조 반환
   ```
 
-4-2-4. cancel() 호출하여 메모리에 남아 있는 키 정보 destroy
+<br>
+
+(4) cancel() 호출하여 메모리에 남아 있는 키 정보 destroy
 
   ```java
   akg.cancel();
@@ -211,9 +213,9 @@ b. AppKeyGenerator 객체에서 key properties 지원 여부 확인
 
 <br>
 
-4-3. Methods used in generate_key()
+### 4-3. Methods used in generate_key()
 
-4-3-1. getUsableModule()
+(1) getUsableModule()
 - 사용 가능한 모듈 반환
   - Security World의 모든 모듈을 순환하며 적합한 모듈을 찾을 때까지 탐색
     ```java
@@ -233,7 +235,9 @@ b. AppKeyGenerator 객체에서 key properties 지원 여부 확인
   - SecurityWorld 클래스의 getModule() 함수 사용
   - 모듈 번호 혹은 ESN을 매개변수로 받을 수 있도록 오버로드되어 있다
 
-4-3-2. setStringProperty()
+<br>
+
+(2) setStringProperty()
 
   ```java
   public static void setStringProperty(AppKeyGenerator akg,
@@ -246,7 +250,9 @@ b. AppKeyGenerator 객체에서 key properties 지원 여부 확인
   }
   ```
 
-4-3-3. setMenuProperty()
+<br>
+
+(3) setMenuProperty()
 
   ```java
   public static void setMenuProperty(AppKeyGenerator akg,
@@ -272,7 +278,6 @@ b. AppKeyGenerator 객체에서 key properties 지원 여부 확인
 <br>
 
 ## 5. Using a key
-
 - 키 사용 전 해당 키를 모듈에 로드해야 한다
 
     ```java
@@ -291,10 +296,9 @@ b. AppKeyGenerator 객체에서 key properties 지원 여부 확인
 <br>
 
 ## 6. Signing a file
+### 6-1. 텍스트 파일을 서명하기 위한 채널 open  
 
-6-1. 텍스트 파일을 서명하기 위한 채널 open  
-
-6-1-1. Channel.Sign 획득  
+(1) Channel.Sign 획득  
 
 a. openChannel()
 
@@ -356,7 +360,9 @@ c. Channel.Sign 클래스 내부
   }
   ```
 
-6-1-2. 서명 채널이 열렸다면 서명할 입력 파일과 저장할 FileOutputStream을 열기
+<br>
+
+(2) 서명 채널이 열렸다면 서명할 입력 파일과 저장할 FileOutputStream을 열기
 
   ```java
   FileInputStream input = null;
@@ -364,7 +370,9 @@ c. Channel.Sign 클래스 내부
   input = new FileInputStream(plaintext_path);
   ```
 
-6-1-3. 채널을 사용하여 입력 파일의 바이트 읽기
+<br>
+
+(3) 채널을 사용하여 입력 파일의 바이트 읽기
 
   ```java
   byte inputbytes[] = new byte[4096];
@@ -381,26 +389,30 @@ c. Channel.Sign 클래스 내부
   byte outputbytes[] = ch.update(new byte[0], true, false);
   ```
 
-- arrayTruncate()
-  - byte[]가 일관된 크기로 나뉘도록 보장
+  - arrayTruncate()
+    - byte[]가 일관된 크기로 나뉘도록 보장
+  
+      ```java
+      static byte[] arrayTruncate(byte[] in, int len) {
+        byte out[] = new byte[len];
+        for(int i = 0; i < len; ++i)
+          out[i] = in[i];
+        return out;
+      }
+      ```
 
-    ```java
-    static byte[] arrayTruncate(byte[] in, int len) {
-      byte out[] = new byte[len];
-      for(int i = 0; i < len; ++i)
-        out[i] = in[i];
-      return out;
-    }
-    ```
+<br>
 
-6-1-4. 해시 및 평문 객체 생성
+(4) 해시 및 평문 객체 생성
 
   ```java
   hash = new M_Hash(outputbytes);
   plaintext = new M_PlainText(M_PlainTextType.Hash, new M_PlainTextType_Data_Hash(hash));
   ```
 
-6-1-5. 서명 작업 수행
+<br>
+
+(5) 서명 작업 수행
 
   ```java
   cmd = new M_Command(M_Cmd.Sign, 0, new M_Cmd_Args_Sign(0, kid, sigmech, plaintext));
@@ -412,7 +424,9 @@ c. Channel.Sign 클래스 내부
   }
   ```
 
-6-1-6. 서명 파일 저장
+<br>
+
+(6) 서명 파일 저장
 
   ```java
   signature = ((M_Cmd_Reply_Sign)reply.reply).sig;
@@ -431,7 +445,6 @@ c. Channel.Sign 클래스 내부
 <br>
 
 ## 7. Cleaning up resources
-
 - 모듈 메모리에서 키 unload
 
     ```java
