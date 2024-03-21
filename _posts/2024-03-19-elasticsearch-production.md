@@ -13,7 +13,7 @@ toc: true
 toc_sticky: true
 
 date: 2024-03-19
-last_modified_at: 2024-03-19
+last_modified_at: 2024-03-21
 ---
 
 ### 1. elasticsearch.yml
@@ -26,13 +26,16 @@ last_modified_at: 2024-03-19
         - \_site_: 내부 네트워크
         - \_global_: 외부 네트워크 별칭
 - ML 옵션
-    - xpack.ml.enabled: false
+    - `xpack.ml.enabled: false`
 - 메모리 스왑 비활성화
-    - bootstrap.memory_lock: true
+    - `bootstrap.memory_lock: true`
     - bootstrap.memory_lock 설정은 노드 실행 시 물리 메모리를 미리 할당받아 스왑 영역을 사용하지 않도록 방어하는 설정이다. 메모리 부족으로 인해 디스크의 스왑 영역을 참조할 경우 심각한 성능 저하가 발생할 수 있기 때문에 필수적으로 설정해야 한다.
     - 이는 스왑 영역 사용을 방지하기 위한 목적이므로 OS의 스왑 자체를 비활성화해 해결하는 방법도 있다.
 - 보안 기능 활성화
-    - xpack.security.enabled: true
+    - `xpack.security.enabled: true`
+    - 운영 환경에서 보안 기능이 활성화되어 있고 다중 노드인 경우 반드시 TLS를 구성해야 한다. 그렇지 않으면 부트스트랩 체크에 실패한다.
+- 단일 노드 구성
+    - `discovery.type: single-node`
 
 ### 2. jvm.options
 - 힙 메모리 설정
