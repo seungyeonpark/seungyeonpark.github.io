@@ -13,7 +13,7 @@ toc: true
 toc_sticky: true
 
 date: 2024-04-04
-last_modified_at: 2024-04-04
+last_modified_at: 2024-04-06
 ---
 
 ## 1. 클러스터 구성
@@ -201,11 +201,59 @@ last_modified_at: 2024-04-04
 - 검색이 많은 시스템인지 저장이 중요한 시스템인지에 따라 샤드 크기는 변경될 수 있고 노드의 리소스 상태도 영향을 미친다
 - 엘라스틱에서는 통계적으로 볼 때 샤드 하나의 크기가 10GB~40GB 정도로 관리하는 것이 좋다고 권고한다
 - rollover API
+  - rollover API는 인덱스가 특정 조건에 도달했을 때 새로운 인덱스를 생성하는 API
+  - 요청이 있을 경우만 발생하기 때문에 요청 전까지는 샤드 크기가 아무리 커져도 새로운 인덱스가 생성되지 않는다. 시스템이 자동으로 조건을 체크하고 조건에 맞는 경우 새로운 인덱스를 생성하는 기능은 ILM이 제공하낟.
 - shrink API
+  - shrink API는 기존 인덱스의 프라이머리 샤드 개수를 줄이는 데 사용한다
+  - 처음 인덱스를 생성할 때 프라이머리 샤드를 너무 많이 만들었다면 shrink API로 샤드를 병합해 샤드 수를 줄일 수 있다
+  - 자주 사용하지 않아 핫 노드에서 웜 노드로 이동하는 인덱스에서도 사용 가능
+  - 자주 사용하지 않는 기존 인덱스를 롤오버하며 shrink API로 샤드 개수를 줄이기도 한다
+
 <br>
 <br>
 
 ## 5. 설정
+운영이나 개발 과정에서 발생하는 시스템의 크고 작은 설정값들을 변수화하여 상황에 맞게 사용
+
+|설정|설명|
+|---|---|
+|클러스터 설정|로그 레벨이나 클러스터 전반에 관한 설정을 한다. REST API를 이용해 동적으로 설정값을 변경할 수 있다.|
+|노드 설정|네트워크 인터페이스, 보안 설정 등 같은 노드 구성에 관한 설정을 한다. elasticsearch.yml 파일에서 정적으로 수정한다.|
+|인덱스 설정|인덱스와 관련된 설정을 할 수 있다. 프라이머리 샤드나 레플리카 개수 설정 등을 할 수 있으며 정적/동적으로 설정이 가능하다. 제공하는 REST API를 이용해 동적으로 인덱스별 설정값을 변경할 수 있다.|
+
+<br>
+
 ### 5-1. 클러스터 설정
+- 클러스터 설정 확인 요청
+  ``` 
+  GET _cluster/settings
+  GET _cluster/settings?include_defaults=true
+  ```
+- 클러스터 설정
+  - logger.*
+  - cluster.routing.allocation.*
+  - cluster.blocks.read_only
+
+<br>
+
 ### 5-2. 노드 설정
+- 노드 설정 확인 요청
+  ``` 
+  GET _nodes/settings
+  ```
+- 노드 설정
+  - node.roles
+  - path.data
+  
+<br>
+
 ### 5-3. 인덱스 설정
+- 인덱스 설정 확인 요청
+  ``` 
+  GET index/settings
+  ```
+- 인덱스 설정
+  - index.number_of_shards
+  - index.number_of_replica
+  - index.refresh_interval
+  - index.blocks.read_only
