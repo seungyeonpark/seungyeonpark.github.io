@@ -20,6 +20,8 @@ main:
 categories:
   - title: "ELK"
     url: /categories/elk/
+  - title: "Redis"
+    url: /categories/redis/
   - title: "Security"
     url: /categories/security/
   - title: "기술서적"
