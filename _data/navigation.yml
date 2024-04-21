@@ -20,6 +20,8 @@ main:
 categories:
   - title: "Algorithm"
     url: /categories/algorithm/
+  - title: "Docker"
+    url: /categories/docker/
   - title: "ELK"
     url: /categories/elk/
   - title: "Redis"
