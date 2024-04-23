@@ -3,11 +3,11 @@ title: "HSM nCore API - Java 튜토리얼"
 excerpt: "Java로 nCore API를 활용하여 HSM에 연결하고 트랜잭션을 실행하는 방법을 알아보자"
 
 categories:
-  - Security
+  - ETC
 tags:
   - [HSM]
 
-permalink: /security/ncore-java-tutorial
+permalink: /etc/ncore-java-tutorial
 
 toc: true
 toc_sticky: true

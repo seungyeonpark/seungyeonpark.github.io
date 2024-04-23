@@ -1,9 +1,9 @@
 ---
-title: "Security"
+title: "ETC"
 layout: category
-permalink: /categories/security/
+permalink: /categories/etc/
 author_profile: true
-taxonomy: Security
+taxonomy: ETC
 sidebar:
   nav: "categories"
 ---

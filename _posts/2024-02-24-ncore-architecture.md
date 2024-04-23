@@ -3,11 +3,11 @@ title: "HSM nCore Architecture"
 excerpt: "HSM의 nCore Architecture에 대해 알아보자"
 
 categories:
-  - Security
+  - ETC
 tags:
   - [HSM]
 
-permalink: /security/ncore-architecture
+permalink: /etc/ncore-architecture
 
 toc: true
 toc_sticky: true
