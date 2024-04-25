@@ -18,14 +18,14 @@ last_modified_at: 2024-04-06
 
 ## 1. 클러스터 구성
 ### 1-1. 소규모 클러스터 구성 예시
-![programing-environment-architecture](../assets/images/posts-img/elasticsearch-cluster-1.jpg)
+![programing-environment-architecture](../../assets/images/posts-img/elasticsearch-cluster-1.jpg)
 - 마스터 후보 노드는 홀수로 지정해야 한다
 - 데이터 노드는 많은 컴퓨터 리소스를 필요로 하기 때문에 가능한 많을수록 좋다
 
 <br>
 
 ### 1-2. 대규모 클러스터  구성 예시
-![programing-environment-architecture](../assets/images/posts-img/elasticsearch-cluster-2.jpg)
+![programing-environment-architecture](../../assets/images/posts-img/elasticsearch-cluster-2.jpg)
 - 마스터 후보 노드들은 하드웨어 성능은 비교적 중요하지 않지만 최소 3대를 준비하고 가능한 한 클라이언트의 요청을 받지 않도록 구성한다
 - 데이터 전용 노드는 온전히 데이터 작업만 진행하고 클러스터에서 가장 많이 배치해야 한다
 - 데이터 전용 노드는 가능하면 고사양의 하드웨어를 구성하고 사양은 통일하는 것이 좋다

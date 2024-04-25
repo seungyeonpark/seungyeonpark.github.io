@@ -19,14 +19,14 @@ last_modified_at: 2024-03-01
 ## 1. Overview
 ### 1-1. Connection
 
-   ![ncore-java-tutorial-connection](../assets/images/posts-img/ncore-java-tutorial-connection.jpg)
+   ![ncore-java-tutorial-connection](../../assets/images/posts-img/ncore-java-tutorial-connection.jpg)
 - 어플리케이션은 먼저 모듈에서 실행되고 있는 하드서버에 연결을 생성해야 한다
 
 <br>
 
 ### 1-2. Transaction
 
-   ![ncore-java-tutorial-transaction](../assets/images/posts-img/ncore-java-tutorial-transaction.jpg)
+   ![ncore-java-tutorial-transaction](../../assets/images/posts-img/ncore-java-tutorial-transaction.jpg)
 - 하드서버 연결 후 어플리케이션은 모듈에 M_Command 전송
 - 모듈은 M_Reply 응답
   - M_Reply는 status 및 명령의 결과를 포함
@@ -128,7 +128,7 @@ last_modified_at: 2024-03-01
 
 (1) 키 생성 프로세스
 
-   ![ncore-java-tutorial-generate-key](../assets/images/posts-img/ncore-java-tutorial-generate-key.jpg)
+   ![ncore-java-tutorial-generate-key](../../assets/images/posts-img/ncore-java-tutorial-generate-key.jpg)
 
 <br>
 
