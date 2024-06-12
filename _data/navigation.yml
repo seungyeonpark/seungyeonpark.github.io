@@ -24,5 +24,7 @@ categories:
     url: /categories/elk/
   - title: "Redis"
     url: /categories/redis/
+  - title: "App"
+    url: /categories/app/
   - title: "ETC"
     url: /categories/etc/
