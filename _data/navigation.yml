@@ -18,6 +18,8 @@ main:
 # sidebar navigation (categories)
 # 2022.02.15 sidebar update : simple ver.
 categories:
+  - title: "AWS"
+    url: /categories/aws/
   - title: "Docker"
     url: /categories/docker/
   - title: "ELK"
