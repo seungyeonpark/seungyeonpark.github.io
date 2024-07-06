@@ -13,11 +13,12 @@ toc: true
 toc_sticky: true
 
 date: 2024-05-09
-last_modified_at: 2024-05-29
+last_modified_at: 2024-07-07
 ---
 
 ```
-📌 Logstash에서는 input-jdbc 플러그인만 공식적으로 지원한다! output-jdbc는 별도로 설치해야 사용 가능하다. 
+📌 Logstash에서는 input-jdbc 플러그인만 공식적으로 지원! 
+   output-jdbc는 별도로 설치해야 사용 가능!
 ```
 
 ## 1. logstash-output-jdbc 플러그인 설치
