@@ -13,7 +13,7 @@ toc: true
 toc_sticky: true
 
 date: 2024-07-16
-last_modified_at: 2024-07-19
+last_modified_at: 2024-07-21
 ---
 
 # 1. 타입
@@ -194,6 +194,8 @@ fun maxOf(a: Int, b: Int) = if (a > b) a else b
 ```
 
 - if를 statement 뿐만 아니라 expression(표현식)으로 사용 가능
+
+<br>
 
 # 8. when 표현식
 
@@ -393,3 +395,36 @@ names.forEach{ println(it) }
 ```
 
 - 파라미터가 하나일 때는 `it` 키워드를 사용할 수 있다.
+
+<br>
+
+# 18. 부모 클래스의 기본 생성자 호출
+- 클래스 상속 시 부모 클래스의 기본 생성자를 호출해야 한다.
+- 자바와 다르게 코틀린에서는 부모 클래스의 생성자를 명시적으로 호출해주어야 부모 클래스의 초기화가 제대로 이루어진다.
+
+``` kotlin
+open class Parent(val name: String)
+class Child(name: String) : Parent(name)
+```
+
+- 위 코드에서 Child 클래스는 Parent 클래스의 생성자를 호출하면서 name 매개변수를 전달한다. 이는 상속 구조에서 부모 클래스의 초기화를 보장한다.
+
+<br>
+
+# 19. open
+
+``` kotlin
+open class Parent(val name: String)
+```
+
+- 코틀린에서는 클래스와 메서드가 기본적으로 상속이 불가능하게 설계되어 있다.
+- open 키워드를 사용해야 해당 클래스나 메서드를 상속할 수 있게 된다.
+
+<br>
+
+# 20. by
+- by 키워드는 위임(Delegation) 패턴을 구현하는 데 사용
+- 위임 프로퍼티(Delegated Properties):
+  - 프로퍼티의 게터와 세터를 직접 구현하지 않고, 위임 객체(delegate)에게 맡깁니다.
+- 인터페이스 위임(Interface Delegation):
+  - 클래스가 특정 인터페이스의 구현을 다른 객체에게 위임할 수 있습니다.
