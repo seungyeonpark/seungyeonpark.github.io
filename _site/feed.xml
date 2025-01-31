@@ -4,27 +4,51 @@
   <id>http://localhost:4000/</id>
   <title>Vicky Park</title>
   <subtitle>Sharing insights on programming, tech stacks, and software engineering practices.</subtitle>
-  <updated>2025-01-30T23:37:30+09:00</updated>
+  <updated>2025-01-31T13:31:45+09:00</updated>
   <author>
-    <name>your_full_name</name>
+    <name>Vicky</name>
     <uri>http://localhost:4000/</uri>
   </author>
   <link rel="self" type="application/atom+xml" href="http://localhost:4000/feed.xml"/>
   <link rel="alternate" type="text/html" hreflang="en"
     href="http://localhost:4000/"/>
   <generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator>
-  <rights> © 2025 your_full_name </rights>
+  <rights> © 2025 Vicky </rights>
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
 
   
   <entry>
-    <title>PACS</title>
-    <link href="http://localhost:4000/posts/pacs/" rel="alternate" type="text/html" title="PACS" />
-    <published>2025-01-27T23:40:00+09:00</published>
+    <title>Orthanc Architecture: Open-Source DICOM Server Implementation</title>
+    <link href="http://localhost:4000/posts/orthanc/" rel="alternate" type="text/html" title="Orthanc Architecture: Open-Source DICOM Server Implementation" />
+    <published>2025-01-30T23:40:00+09:00</published>
   
-    <updated>2025-01-27T23:40:00+09:00</updated>
+    <updated>2025-01-30T23:40:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/orthanc/</id>
+    <content type="text/html" src="http://localhost:4000/posts/orthanc/" />
+    <author>
+      <name>Vicky</name>
+    </author>
+
+  
+    
+    <category term="Medical Imaging" />
+    
+  
+
+  <summary>Comprehensive overview of Orthanc server setup, from Docker deployment to REST API integration.</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Understanding PACS: Medical Image Management System</title>
+    <link href="http://localhost:4000/posts/pacs/" rel="alternate" type="text/html" title="Understanding PACS: Medical Image Management System" />
+    <published>2025-01-27T22:40:00+09:00</published>
+  
+    <updated>2025-01-27T22:40:00+09:00</updated>
   
     <id>http://localhost:4000/posts/pacs/</id>
     <content type="text/html" src="http://localhost:4000/posts/pacs/" />
@@ -34,21 +58,21 @@
 
   
     
-    <category term="PACS" />
+    <category term="Medical Imaging" />
     
   
 
-  <summary>Understanding PACS: The Backbone of Modern Medical Imaging</summary>
+  <summary>Technical overview of PACS architecture and its core components in healthcare imaging infrastructure.</summary>
 
   </entry>
 
   
   <entry>
-    <title>DICOM</title>
-    <link href="http://localhost:4000/posts/dicom/" rel="alternate" type="text/html" title="DICOM" />
-    <published>2025-01-26T15:30:00+09:00</published>
+    <title>DICOM Architecture: Technical Guide to Medical Image Protocol</title>
+    <link href="http://localhost:4000/posts/dicom/" rel="alternate" type="text/html" title="DICOM Architecture: Technical Guide to Medical Image Protocol" />
+    <published>2025-01-26T14:30:00+09:00</published>
   
-    <updated>2025-01-26T15:30:00+09:00</updated>
+    <updated>2025-01-26T14:30:00+09:00</updated>
   
     <id>http://localhost:4000/posts/dicom/</id>
     <content type="text/html" src="http://localhost:4000/posts/dicom/" />
@@ -58,11 +82,11 @@
 
   
     
-    <category term="DICOM" />
+    <category term="Medical Imaging" />
     
   
 
-  <summary>Understanding DICOM: A Comprehensive Guide</summary>
+  <summary>Explore DICOM&amp;#39;s technical structure including file preamble, meta elements, and data sets.</summary>
 
   </entry>
 

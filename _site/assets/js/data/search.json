@@ -1,19 +1,27 @@
 [
   {
-    "title": "PACS",
-    "url": "/posts/pacs/",
-    "categories": "PACS",
-    "tags": "PACS",
-    "date": "2025-01-27 23:40:00 +0900",
-    "content": "Understanding PACS: The Backbone of Modern Medical Imaging"
+    "title": "Orthanc Architecture: Open-Source DICOM Server Implementation",
+    "url": "/posts/orthanc/",
+    "categories": "Medical Imaging",
+    "tags": "Orthanc, DICOM, Open Source, Docker, REST API",
+    "date": "2025-01-30 23:40:00 +0900",
+    "content": "Comprehensive overview of Orthanc server setup, from Docker deployment to REST API integration."
   },
   {
-    "title": "DICOM",
+    "title": "Understanding PACS: Medical Image Management System",
+    "url": "/posts/pacs/",
+    "categories": "Medical Imaging",
+    "tags": "PACS, Healthcare, System Architecture, Image Management",
+    "date": "2025-01-27 22:40:00 +0900",
+    "content": "Technical overview of PACS architecture and its core components in healthcare imaging infrastructure."
+  },
+  {
+    "title": "DICOM Architecture: Technical Guide to Medical Image Protocol",
     "url": "/posts/dicom/",
-    "categories": "DICOM",
-    "tags": "DICOM",
-    "date": "2025-01-26 15:30:00 +0900",
-    "content": "Understanding DICOM: A Comprehensive Guide"
+    "categories": "Medical Imaging",
+    "tags": "DICOM, Protocol, Standards, Healthcare",
+    "date": "2025-01-26 14:30:00 +0900",
+    "content": "Explore DICOM&#39;s technical structure including file preamble, meta elements, and data sets."
   }
   
 ]
