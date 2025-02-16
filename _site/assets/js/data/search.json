@@ -1,5 +1,85 @@
 [
   {
+    "title": "엘라스틱서치 기본 구조와 매핑",
+    "url": "/posts/elasticsearch-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C/",
+    "categories": "Database",
+    "tags": "Elasticsearch, Index, Document, Mapping, Analyzer",
+    "date": "2025-02-16 23:40:00 +0900",
+    "content": "엘라스틱서치의 핵심 개념, 도큐먼트 관리, 매핑과 데이터 타입, 분석기 구성"
+  },
+  {
+    "title": "엘라스틱서치 검색과 쿼리 활용",
+    "url": "/posts/elasticsearch-search/",
+    "categories": "Database",
+    "tags": "Elasticsearch, Query, Search, Scoring, Context",
+    "date": "2025-02-16 23:40:00 +0900",
+    "content": "컨텍스트 유형, 쿼리 종류와 문법, 스코어링과 부스팅 전략"
+  },
+  {
+    "title": "엘라스틱서치 집계와 통계 분석",
+    "url": "/posts/elasticsearch-aggregations/",
+    "categories": "Database",
+    "tags": "Elasticsearch, Aggregation, Metrics, Bucket, Pipeline",
+    "date": "2025-02-16 23:40:00 +0900",
+    "content": "매트릭/버킷 집계 타입, 파이프라인 집계를 활용한 데이터 분석과 통계"
+  },
+  {
+    "title": "도커 레지스트리와 이미지 관리",
+    "url": "/posts/docker-registry/",
+    "categories": "Container",
+    "tags": "Docker, Registry, Image Tag, Docker Hub, Deployment",
+    "date": "2025-02-16 23:40:00 +0900",
+    "content": "도커 이미지 참조 체계, 레지스트리 운영, 이미지 태깅과 배포 전략"
+  },
+  {
+    "title": "도커 이미지와 Dockerfile 작성 방법",
+    "url": "/posts/docker-image/",
+    "categories": "Container",
+    "tags": "Docker, Dockerfile, Image Layer, Docker Hub, Build",
+    "date": "2025-02-16 23:40:00 +0900",
+    "content": "도커 이미지의 구조, Dockerfile 인스트럭션, 이미지 빌드와 레이어 캐시 관리"
+  },
+  {
+    "title": "도커 컨테이너의 파일 시스템과 데이터 관리",
+    "url": "/posts/docker-file-system/",
+    "categories": "Container",
+    "tags": "Docker, File System, Volume, Mount, Data Persistence",
+    "date": "2025-02-16 23:40:00 +0900",
+    "content": "컨테이너 파일 시스템의 구조, 볼륨과 마운트를 통한 데이터 영속성 관리, 파일 시스템 베스트 프랙티스"
+  },
+  {
+    "title": "도커 컴포즈 파일 구조와 컨테이너 관리",
+    "url": "/posts/docker-compose/",
+    "categories": "Container",
+    "tags": "Docker, Docker Compose, Container Networking, YAML, DNS",
+    "date": "2025-02-16 23:40:00 +0900",
+    "content": "도커 컴포즈 파일의 구성 요소, 컨테이너 간 통신 방식, 애플리케이션 설정 관리"
+  },
+  {
+    "title": "도커 컨테이너 기초",
+    "url": "/posts/docker-basic/",
+    "categories": "Container",
+    "tags": "Docker, Container, CLI, Docker Engine, Virtualization",
+    "date": "2025-02-16 23:40:00 +0900",
+    "content": "컨테이너 개념, 실행 방법, 관리 명령어, 애플리케이션 호스팅과 도커 엔진 구조"
+  },
+  {
+    "title": "AWS IAM 접근 권한 관리",
+    "url": "/posts/aws-iam/",
+    "categories": "Cloud Computing",
+    "tags": "AWS, IAM, Security, Access Management, Policy",
+    "date": "2025-02-16 23:40:00 +0900",
+    "content": "IAM 구성 요소, 최소 권한 정책, 유저 생성과 역할 설정"
+  },
+  {
+    "title": "AWS 인프라 구성 요소: EC2, EBS, ELB",
+    "url": "/posts/aws-ec2/",
+    "categories": "Cloud Computing",
+    "tags": "AWS, EC2, EBS, ELB, Infrastructure",
+    "date": "2025-02-16 23:40:00 +0900",
+    "content": "AWS EC2 인스턴스의 구매 옵션, EBS 스토리지 유형, ELB 로드밸런서 분류와 특징"
+  },
+  {
     "title": "Orthanc Architecture: Open-Source DICOM Server Implementation",
     "url": "/posts/orthanc/",
     "categories": "Medical Imaging",

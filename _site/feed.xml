@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Vicky Park</title>
   <subtitle>Sharing insights on programming, tech stacks, and software engineering practices.</subtitle>
-  <updated>2025-01-31T13:31:45+09:00</updated>
+  <updated>2025-02-16T23:55:12+09:00</updated>
   <author>
     <name>Vicky</name>
     <uri>http://localhost:4000/</uri>
@@ -20,73 +20,121 @@
 
   
   <entry>
-    <title>Orthanc Architecture: Open-Source DICOM Server Implementation</title>
-    <link href="http://localhost:4000/posts/orthanc/" rel="alternate" type="text/html" title="Orthanc Architecture: Open-Source DICOM Server Implementation" />
-    <published>2025-01-30T23:40:00+09:00</published>
+    <title>엘라스틱서치 기본 구조와 매핑</title>
+    <link href="http://localhost:4000/posts/elasticsearch-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C/" rel="alternate" type="text/html" title="엘라스틱서치 기본 구조와 매핑" />
+    <published>2025-02-16T23:40:00+09:00</published>
   
-    <updated>2025-01-30T23:40:00+09:00</updated>
+    <updated>2025-02-16T23:40:00+09:00</updated>
   
-    <id>http://localhost:4000/posts/orthanc/</id>
-    <content type="text/html" src="http://localhost:4000/posts/orthanc/" />
+    <id>http://localhost:4000/posts/elasticsearch-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C/</id>
+    <content type="text/html" src="http://localhost:4000/posts/elasticsearch-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C/" />
     <author>
       <name>Vicky</name>
     </author>
 
   
     
-    <category term="Medical Imaging" />
+    <category term="Database" />
     
   
 
-  <summary>Comprehensive overview of Orthanc server setup, from Docker deployment to REST API integration.</summary>
+  <summary>엘라스틱서치의 핵심 개념, 도큐먼트 관리, 매핑과 데이터 타입, 분석기 구성</summary>
 
   </entry>
 
   
   <entry>
-    <title>Understanding PACS: Medical Image Management System</title>
-    <link href="http://localhost:4000/posts/pacs/" rel="alternate" type="text/html" title="Understanding PACS: Medical Image Management System" />
-    <published>2025-01-27T22:40:00+09:00</published>
+    <title>엘라스틱서치 검색과 쿼리 활용</title>
+    <link href="http://localhost:4000/posts/elasticsearch-search/" rel="alternate" type="text/html" title="엘라스틱서치 검색과 쿼리 활용" />
+    <published>2025-02-16T23:40:00+09:00</published>
   
-    <updated>2025-01-27T22:40:00+09:00</updated>
+    <updated>2025-02-16T23:40:00+09:00</updated>
   
-    <id>http://localhost:4000/posts/pacs/</id>
-    <content type="text/html" src="http://localhost:4000/posts/pacs/" />
+    <id>http://localhost:4000/posts/elasticsearch-search/</id>
+    <content type="text/html" src="http://localhost:4000/posts/elasticsearch-search/" />
     <author>
       <name>Vicky</name>
     </author>
 
   
     
-    <category term="Medical Imaging" />
+    <category term="Database" />
     
   
 
-  <summary>Technical overview of PACS architecture and its core components in healthcare imaging infrastructure.</summary>
+  <summary>컨텍스트 유형, 쿼리 종류와 문법, 스코어링과 부스팅 전략</summary>
 
   </entry>
 
   
   <entry>
-    <title>DICOM Architecture: Technical Guide to Medical Image Protocol</title>
-    <link href="http://localhost:4000/posts/dicom/" rel="alternate" type="text/html" title="DICOM Architecture: Technical Guide to Medical Image Protocol" />
-    <published>2025-01-26T14:30:00+09:00</published>
+    <title>엘라스틱서치 집계와 통계 분석</title>
+    <link href="http://localhost:4000/posts/elasticsearch-aggregations/" rel="alternate" type="text/html" title="엘라스틱서치 집계와 통계 분석" />
+    <published>2025-02-16T23:40:00+09:00</published>
   
-    <updated>2025-01-26T14:30:00+09:00</updated>
+    <updated>2025-02-16T23:40:00+09:00</updated>
   
-    <id>http://localhost:4000/posts/dicom/</id>
-    <content type="text/html" src="http://localhost:4000/posts/dicom/" />
+    <id>http://localhost:4000/posts/elasticsearch-aggregations/</id>
+    <content type="text/html" src="http://localhost:4000/posts/elasticsearch-aggregations/" />
     <author>
       <name>Vicky</name>
     </author>
 
   
     
-    <category term="Medical Imaging" />
+    <category term="Database" />
     
   
 
-  <summary>Explore DICOM&amp;#39;s technical structure including file preamble, meta elements, and data sets.</summary>
+  <summary>매트릭/버킷 집계 타입, 파이프라인 집계를 활용한 데이터 분석과 통계</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>도커 레지스트리와 이미지 관리</title>
+    <link href="http://localhost:4000/posts/docker-registry/" rel="alternate" type="text/html" title="도커 레지스트리와 이미지 관리" />
+    <published>2025-02-16T23:40:00+09:00</published>
+  
+    <updated>2025-02-16T23:40:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/docker-registry/</id>
+    <content type="text/html" src="http://localhost:4000/posts/docker-registry/" />
+    <author>
+      <name>Vicky</name>
+    </author>
+
+  
+    
+    <category term="Container" />
+    
+  
+
+  <summary>도커 이미지 참조 체계, 레지스트리 운영, 이미지 태깅과 배포 전략</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>도커 이미지와 Dockerfile 작성 방법</title>
+    <link href="http://localhost:4000/posts/docker-image/" rel="alternate" type="text/html" title="도커 이미지와 Dockerfile 작성 방법" />
+    <published>2025-02-16T23:40:00+09:00</published>
+  
+    <updated>2025-02-16T23:40:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/docker-image/</id>
+    <content type="text/html" src="http://localhost:4000/posts/docker-image/" />
+    <author>
+      <name>Vicky</name>
+    </author>
+
+  
+    
+    <category term="Container" />
+    
+  
+
+  <summary>도커 이미지의 구조, Dockerfile 인스트럭션, 이미지 빌드와 레이어 캐시 관리</summary>
 
   </entry>
 
