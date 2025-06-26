@@ -1,7 +1,7 @@
 ---
 title: "Redis 키 관리: 생성부터 만료까지"
 description: "키의 생성과 삭제 메커니즘, 키 조회와 관리를 위한 커맨드, 만료 시간 설정 옵션"
-date: 2025-02-16 23:40:00 +0900
+date: 2025-02-19 23:40:00 +0900
 categories: [Database, Redis]
 tags: [Redis, Key Management, TTL, Expiration, Scan, Flush, Delete]
 math: false

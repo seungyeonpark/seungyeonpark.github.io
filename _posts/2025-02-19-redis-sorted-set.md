@@ -1,7 +1,7 @@
 ---
 title: "Redis Sorted Set: 랭킹 시스템 "
 description: "순위별 데이터 저장과 업데이트, 랭킹 집계, 최신순 정렬, 고정 크기 데이터셋 관리"
-date: 2025-02-16 23:40:00 +0900
+date: 2025-02-19 23:40:00 +0900
 categories: [Database, Redis]
 tags: [Redis, Sorted Set, Leaderboard, Ranking System, ZADD, ZRANGE, ZUNIONSTORE]
 math: false

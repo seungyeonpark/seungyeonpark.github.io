@@ -1,7 +1,7 @@
 ---
 title: "Redis 데이터 구조: 9가지 타입과 활용 방법"
 description: "String/List/Hash/Set/Sorted Set의 핵심 기능, Bitmap/HyperLogLog/Geospatial/Stream 구조의 특징과 명령어"
-date: 2025-02-16 23:40:00 +0900
+date: 2025-02-19 23:40:00 +0900
 categories: [Database, Redis]
 tags: [Redis, Data Structures, String, List, Hash, Set, Sorted Set, Bitmap, HyperLogLog, Geospatial, Stream]
 math: false

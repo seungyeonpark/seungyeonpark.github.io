@@ -1,7 +1,7 @@
 ---
 title: "Elasticsearch 핵심 요소: 클러스터, 샤드, 시스템 설정"
 description: "클러스터 규모별 구성 방식, 스냅샷 백업/복원, 샤드 분배와 모니터링, 클러스터/노드/인덱스 설정값 관리"
-date: 2025-02-16 23:40:00 +0900
+date: 2025-02-19 23:40:00 +0900
 categories: [Database, Search Engine]
 tags: [Elasticsearch, Cluster, Backup, Shard, System Configuration, Architecture]
 math: false

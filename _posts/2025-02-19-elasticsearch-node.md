@@ -1,7 +1,7 @@
 ---
 title: "Elasticsearch 노드와 통신: 기능과 역할별 분류"
 description: "통신 모듈의 종류와 특징, 마스터/데이터/인제스트/코디네이터 노드의 역할과 운영 방식"
-date: 2025-02-16 23:40:00 +0900
+date: 2025-02-19 23:40:00 +0900
 categories: [Database, Search Engine]
 tags: [Elasticsearch, Node, Transport, HTTP, Master Node, Data Node, Ingest Node, Coordinator Node]
 math: false

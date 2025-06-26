@@ -1,7 +1,7 @@
 ---
 title: "Logstash JDBC: Output 플러그인 설정 가이드"
 description: "JDBC output 플러그인 설치, 드라이버 설정, 연결 설정 파일 구성 방법"
-date: 2025-02-16 23:40:00 +0900
+date: 2025-02-19 23:40:00 +0900
 categories: [Database, ETL]
 tags: [Logstash, JDBC, Plugin, Database Integration, Configuration]
 math: false

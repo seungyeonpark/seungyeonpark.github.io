@@ -1,7 +1,7 @@
 ---
 title: "Redis Stream: 메시지 브로커 구현과 관리"
 description: "스트림 데이터 저장/조회, 소비자 그룹 운영, ACK와 메시지 재할당, 상태 모니터링"
-date: 2025-02-16 23:40:00 +0900
+date: 2025-02-19 23:40:00 +0900
 categories: [Database, Message Queue]
 tags: [Redis, Stream, Message Broker, Consumer Group, ACK, Message Redelivery, Monitoring]
 math: false

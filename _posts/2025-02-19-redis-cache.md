@@ -1,7 +1,7 @@
 ---
 title: "Redis 캐시 전략: 읽기/쓰기 패턴과 메모리 관리"
 description: "캐시 도입 효과와 전략, 데이터 만료와 삭제 정책, 캐시 스탬피드 해결 방안"
-date: 2025-02-16 23:40:00 +0900
+date: 2025-02-19 23:40:00 +0900
 categories: [Database, Cache]
 tags: [Redis, Cache Strategy, Memory Management, TTL, Cache Stampede, LRU, LFU]
 math: false

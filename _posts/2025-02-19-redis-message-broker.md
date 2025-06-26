@@ -1,7 +1,7 @@
 ---
 title: "Redis 메시지 처리: Pub/Sub, List 기반 메시징 큐"
 description: "메시징 큐와 이벤트 스트림 비교, Pub/Sub 시스템 구현, List를 활용한 메시징 큐 구축 방법"
-date: 2025-02-16 23:40:00 +0900
+date: 2025-02-19 23:40:00 +0900
 categories: [Database, Message Queue]
 tags: [Redis, Pub/Sub, Message Queue, Event Stream, List Queue, Blocking Operations]
 math: false

@@ -1,7 +1,7 @@
 ---
 title: "Elasticsearch 설정 파일: 주요 옵션과 시스템 최적화"
 description: "elasticsearch.yml, jvm.options 설정값 구성, 리눅스 시스템 제한 해제, 가상 메모리 최적화 방법"
-date: 2025-02-16 23:40:00 +0900
+date: 2025-02-19 23:40:00 +0900
 categories: [Database, Search Engine]
 tags: [Elasticsearch, Configuration, JVM, System Settings, Memory Management, Network Settings, Security]
 math: false
