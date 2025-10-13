@@ -1,5 +1,109 @@
 [
   {
+    "title": "SMART on FHIR Standalone Launch 인증 플로우",
+    "url": "/posts/epic-on-fhir/",
+    "categories": "FHIR, OAuth",
+    "tags": "SMART on FHIR, Standalone Launch, OAuth2.0, Access Token, EHR Integration",
+    "date": "2025-06-26 11:00:00 +0900",
+    "content": "SMART on FHIR Standalone Launch 방식에서의 인증 및 데이터 획득"
+  },
+  {
+    "title": "Redis Stream: 메시지 브로커 구현과 관리",
+    "url": "/posts/redis-stream/",
+    "categories": "Database, Message Queue",
+    "tags": "Redis, Stream, Message Broker, Consumer Group, ACK, Message Redelivery, Monitoring",
+    "date": "2025-02-19 23:40:00 +0900",
+    "content": "스트림 데이터 저장/조회, 소비자 그룹 운영, ACK와 메시지 재할당, 상태 모니터링"
+  },
+  {
+    "title": "Redis Sorted Set: 랭킹 시스템 ",
+    "url": "/posts/redis-sorted-set/",
+    "categories": "Database, Redis",
+    "tags": "Redis, Sorted Set, Leaderboard, Ranking System, ZADD, ZRANGE, ZUNIONSTORE",
+    "date": "2025-02-19 23:40:00 +0900",
+    "content": "순위별 데이터 저장과 업데이트, 랭킹 집계, 최신순 정렬, 고정 크기 데이터셋 관리"
+  },
+  {
+    "title": "Redis 메시지 처리: Pub/Sub, List 기반 메시징 큐",
+    "url": "/posts/redis-message-broker/",
+    "categories": "Database, Message Queue",
+    "tags": "Redis, Pub/Sub, Message Queue, Event Stream, List Queue, Blocking Operations",
+    "date": "2025-02-19 23:40:00 +0900",
+    "content": "메시징 큐와 이벤트 스트림 비교, Pub/Sub 시스템 구현, List를 활용한 메시징 큐 구축 방법"
+  },
+  {
+    "title": "Redis 키 관리: 생성부터 만료까지",
+    "url": "/posts/redis-key-management/",
+    "categories": "Database, Redis",
+    "tags": "Redis, Key Management, TTL, Expiration, Scan, Flush, Delete",
+    "date": "2025-02-19 23:40:00 +0900",
+    "content": "키의 생성과 삭제 메커니즘, 키 조회와 관리를 위한 커맨드, 만료 시간 설정 옵션"
+  },
+  {
+    "title": "Redis 데이터 구조: 9가지 타입과 활용 방법",
+    "url": "/posts/redis-datastructure/",
+    "categories": "Database, Redis",
+    "tags": "Redis, Data Structures, String, List, Hash, Set, Sorted Set, Bitmap, HyperLogLog, Geospatial, Stream",
+    "date": "2025-02-19 23:40:00 +0900",
+    "content": "String/List/Hash/Set/Sorted Set의 핵심 기능, Bitmap/HyperLogLog/Geospatial/Stream 구조의 특징과 명령어"
+  },
+  {
+    "title": "Redis 캐시 전략: 읽기/쓰기 패턴과 메모리 관리",
+    "url": "/posts/redis-cache/",
+    "categories": "Database, Cache",
+    "tags": "Redis, Cache Strategy, Memory Management, TTL, Cache Stampede, LRU, LFU",
+    "date": "2025-02-19 23:40:00 +0900",
+    "content": "캐시 도입 효과와 전략, 데이터 만료와 삭제 정책, 캐시 스탬피드 해결 방안"
+  },
+  {
+    "title": "Logstash 핵심 구성 요소: 파이프라인, 플러그인, 코덱",
+    "url": "/posts/logstash/",
+    "categories": "Database, ETL",
+    "tags": "Logstash, Pipeline, Plugin, Input, Filter, Output, Codec, Configuration",
+    "date": "2025-02-19 23:40:00 +0900",
+    "content": "입력/필터/출력 파이프라인 설정, 주요 플러그인 기능과 사용법, 데이터 인코딩/디코딩 코덱 활용"
+  },
+  {
+    "title": "Logstash JDBC: Output 플러그인 설정 가이드",
+    "url": "/posts/logstash-output-jdbc/",
+    "categories": "Database, ETL",
+    "tags": "Logstash, JDBC, Plugin, Database Integration, Configuration",
+    "date": "2025-02-19 23:40:00 +0900",
+    "content": "JDBC output 플러그인 설치, 드라이버 설정, 연결 설정 파일 구성 방법"
+  },
+  {
+    "title": "Kibana 설정과 권한: 보안, 서버, 관리자 기능",
+    "url": "/posts/kibana/",
+    "categories": "Database, Search Engine",
+    "tags": "Kibana, Security, SSL, Authentication, User Management, Spaces, Dashboard",
+    "date": "2025-02-19 23:40:00 +0900",
+    "content": "실행 환경과 보안 설정, 통신 암호화 구성, 사용자/역할 관리, 스페이스와 대시보드 설정"
+  },
+  {
+    "title": "Elasticsearch 설정 파일: 주요 옵션과 시스템 최적화",
+    "url": "/posts/elasticsearch-production/",
+    "categories": "Database, Search Engine",
+    "tags": "Elasticsearch, Configuration, JVM, System Settings, Memory Management, Network Settings, Security",
+    "date": "2025-02-19 23:40:00 +0900",
+    "content": "elasticsearch.yml, jvm.options 설정값 구성, 리눅스 시스템 제한 해제, 가상 메모리 최적화 방법"
+  },
+  {
+    "title": "Elasticsearch 노드와 통신: 기능과 역할별 분류",
+    "url": "/posts/elasticsearch-node/",
+    "categories": "Database, Search Engine",
+    "tags": "Elasticsearch, Node, Transport, HTTP, Master Node, Data Node, Ingest Node, Coordinator Node",
+    "date": "2025-02-19 23:40:00 +0900",
+    "content": "통신 모듈의 종류와 특징, 마스터/데이터/인제스트/코디네이터 노드의 역할과 운영 방식"
+  },
+  {
+    "title": "Elasticsearch 핵심 요소: 클러스터, 샤드, 시스템 설정",
+    "url": "/posts/elasticsearch-cluster/",
+    "categories": "Database, Search Engine",
+    "tags": "Elasticsearch, Cluster, Backup, Shard, System Configuration, Architecture",
+    "date": "2025-02-19 23:40:00 +0900",
+    "content": "클러스터 규모별 구성 방식, 스냅샷 백업/복원, 샤드 분배와 모니터링, 클러스터/노드/인덱스 설정값 관리"
+  },
+  {
     "title": "엘라스틱서치 기본 구조와 매핑",
     "url": "/posts/elasticsearch-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C/",
     "categories": "Database",

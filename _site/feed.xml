@@ -2,9 +2,9 @@
 
 <feed xmlns="http://www.w3.org/2005/Atom">
   <id>http://localhost:4000/</id>
-  <title>Vicky Park</title>
+  <title>Vicky</title>
   <subtitle>Sharing insights on programming, tech stacks, and software engineering practices.</subtitle>
-  <updated>2025-02-16T23:55:12+09:00</updated>
+  <updated>2025-10-13T14:45:32+09:00</updated>
   <author>
     <name>Vicky</name>
     <uri>http://localhost:4000/</uri>
@@ -20,14 +20,40 @@
 
   
   <entry>
-    <title>엘라스틱서치 기본 구조와 매핑</title>
-    <link href="http://localhost:4000/posts/elasticsearch-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C/" rel="alternate" type="text/html" title="엘라스틱서치 기본 구조와 매핑" />
-    <published>2025-02-16T23:40:00+09:00</published>
+    <title>SMART on FHIR Standalone Launch 인증 플로우</title>
+    <link href="http://localhost:4000/posts/epic-on-fhir/" rel="alternate" type="text/html" title="SMART on FHIR Standalone Launch 인증 플로우" />
+    <published>2025-06-26T11:00:00+09:00</published>
   
-    <updated>2025-02-16T23:40:00+09:00</updated>
+    <updated>2025-06-26T11:00:00+09:00</updated>
   
-    <id>http://localhost:4000/posts/elasticsearch-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C/</id>
-    <content type="text/html" src="http://localhost:4000/posts/elasticsearch-%EA%B5%AC%EC%84%B1%EC%9A%94%EC%86%8C/" />
+    <id>http://localhost:4000/posts/epic-on-fhir/</id>
+    <content type="text/html" src="http://localhost:4000/posts/epic-on-fhir/" />
+    <author>
+      <name>Vicky</name>
+    </author>
+
+  
+    
+    <category term="FHIR" />
+    
+    <category term="OAuth" />
+    
+  
+
+  <summary>SMART on FHIR Standalone Launch 방식에서의 인증 및 데이터 획득</summary>
+
+  </entry>
+
+  
+  <entry>
+    <title>Redis Stream: 메시지 브로커 구현과 관리</title>
+    <link href="http://localhost:4000/posts/redis-stream/" rel="alternate" type="text/html" title="Redis Stream: 메시지 브로커 구현과 관리" />
+    <published>2025-02-19T23:40:00+09:00</published>
+  
+    <updated>2025-06-26T11:35:10+09:00</updated>
+  
+    <id>http://localhost:4000/posts/redis-stream/</id>
+    <content type="text/html" src="http://localhost:4000/posts/redis-stream/" />
     <author>
       <name>Vicky</name>
     </author>
@@ -36,22 +62,24 @@
     
     <category term="Database" />
     
+    <category term="Message Queue" />
+    
   
 
-  <summary>엘라스틱서치의 핵심 개념, 도큐먼트 관리, 매핑과 데이터 타입, 분석기 구성</summary>
+  <summary>스트림 데이터 저장/조회, 소비자 그룹 운영, ACK와 메시지 재할당, 상태 모니터링</summary>
 
   </entry>
 
   
   <entry>
-    <title>엘라스틱서치 검색과 쿼리 활용</title>
-    <link href="http://localhost:4000/posts/elasticsearch-search/" rel="alternate" type="text/html" title="엘라스틱서치 검색과 쿼리 활용" />
-    <published>2025-02-16T23:40:00+09:00</published>
+    <title>Redis Sorted Set: 랭킹 시스템 </title>
+    <link href="http://localhost:4000/posts/redis-sorted-set/" rel="alternate" type="text/html" title="Redis Sorted Set: 랭킹 시스템 " />
+    <published>2025-02-19T23:40:00+09:00</published>
   
-    <updated>2025-02-16T23:40:00+09:00</updated>
+    <updated>2025-06-26T11:35:10+09:00</updated>
   
-    <id>http://localhost:4000/posts/elasticsearch-search/</id>
-    <content type="text/html" src="http://localhost:4000/posts/elasticsearch-search/" />
+    <id>http://localhost:4000/posts/redis-sorted-set/</id>
+    <content type="text/html" src="http://localhost:4000/posts/redis-sorted-set/" />
     <author>
       <name>Vicky</name>
     </author>
@@ -60,22 +88,24 @@
     
     <category term="Database" />
     
+    <category term="Redis" />
+    
   
 
-  <summary>컨텍스트 유형, 쿼리 종류와 문법, 스코어링과 부스팅 전략</summary>
+  <summary>순위별 데이터 저장과 업데이트, 랭킹 집계, 최신순 정렬, 고정 크기 데이터셋 관리</summary>
 
   </entry>
 
   
   <entry>
-    <title>엘라스틱서치 집계와 통계 분석</title>
-    <link href="http://localhost:4000/posts/elasticsearch-aggregations/" rel="alternate" type="text/html" title="엘라스틱서치 집계와 통계 분석" />
-    <published>2025-02-16T23:40:00+09:00</published>
+    <title>Redis 메시지 처리: Pub/Sub, List 기반 메시징 큐</title>
+    <link href="http://localhost:4000/posts/redis-message-broker/" rel="alternate" type="text/html" title="Redis 메시지 처리: Pub/Sub, List 기반 메시징 큐" />
+    <published>2025-02-19T23:40:00+09:00</published>
   
-    <updated>2025-02-16T23:40:00+09:00</updated>
+    <updated>2025-06-26T11:35:10+09:00</updated>
   
-    <id>http://localhost:4000/posts/elasticsearch-aggregations/</id>
-    <content type="text/html" src="http://localhost:4000/posts/elasticsearch-aggregations/" />
+    <id>http://localhost:4000/posts/redis-message-broker/</id>
+    <content type="text/html" src="http://localhost:4000/posts/redis-message-broker/" />
     <author>
       <name>Vicky</name>
     </author>
@@ -84,57 +114,37 @@
     
     <category term="Database" />
     
+    <category term="Message Queue" />
+    
   
 
-  <summary>매트릭/버킷 집계 타입, 파이프라인 집계를 활용한 데이터 분석과 통계</summary>
+  <summary>메시징 큐와 이벤트 스트림 비교, Pub/Sub 시스템 구현, List를 활용한 메시징 큐 구축 방법</summary>
 
   </entry>
 
   
   <entry>
-    <title>도커 레지스트리와 이미지 관리</title>
-    <link href="http://localhost:4000/posts/docker-registry/" rel="alternate" type="text/html" title="도커 레지스트리와 이미지 관리" />
-    <published>2025-02-16T23:40:00+09:00</published>
+    <title>Redis 키 관리: 생성부터 만료까지</title>
+    <link href="http://localhost:4000/posts/redis-key-management/" rel="alternate" type="text/html" title="Redis 키 관리: 생성부터 만료까지" />
+    <published>2025-02-19T23:40:00+09:00</published>
   
-    <updated>2025-02-16T23:40:00+09:00</updated>
+    <updated>2025-06-26T11:35:10+09:00</updated>
   
-    <id>http://localhost:4000/posts/docker-registry/</id>
-    <content type="text/html" src="http://localhost:4000/posts/docker-registry/" />
+    <id>http://localhost:4000/posts/redis-key-management/</id>
+    <content type="text/html" src="http://localhost:4000/posts/redis-key-management/" />
     <author>
       <name>Vicky</name>
     </author>
 
   
     
-    <category term="Container" />
+    <category term="Database" />
+    
+    <category term="Redis" />
     
   
 
-  <summary>도커 이미지 참조 체계, 레지스트리 운영, 이미지 태깅과 배포 전략</summary>
-
-  </entry>
-
-  
-  <entry>
-    <title>도커 이미지와 Dockerfile 작성 방법</title>
-    <link href="http://localhost:4000/posts/docker-image/" rel="alternate" type="text/html" title="도커 이미지와 Dockerfile 작성 방법" />
-    <published>2025-02-16T23:40:00+09:00</published>
-  
-    <updated>2025-02-16T23:40:00+09:00</updated>
-  
-    <id>http://localhost:4000/posts/docker-image/</id>
-    <content type="text/html" src="http://localhost:4000/posts/docker-image/" />
-    <author>
-      <name>Vicky</name>
-    </author>
-
-  
-    
-    <category term="Container" />
-    
-  
-
-  <summary>도커 이미지의 구조, Dockerfile 인스트럭션, 이미지 빌드와 레이어 캐시 관리</summary>
+  <summary>키의 생성과 삭제 메커니즘, 키 조회와 관리를 위한 커맨드, 만료 시간 설정 옵션</summary>
 
   </entry>
 
